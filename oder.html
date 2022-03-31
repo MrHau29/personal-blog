@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Blog, car,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-car</title>
+
+    
+    <link rel="stylesheet" href="css/H.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <style>
+        div {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body class="form-form">
+
+    <header>
+        <h1 style="font-size: 20px; font-family: times new roman;"><a href="./index.html"><b>H-Car</b></a></h1>
+        
+
+    </header>
+    
+        <div class="form">
+            <form action="#" id="form" >
+                <div class="auth-form__container">
+                    <div class="form__header">
+                    <h3 class="form__heading">Thuê xe tự lái</h3>
+                    
+                    </div>
+                    
+                </div>
+            
+                    <div class="form__form">
+        
+                        <div class="form__group">
+                            <label for="fullName" class="form-lable">Họ và tên:</label>
+                            <input id="fullName" name="fullName" type="text" class="form_input"  placeholder="Nhập tên bạn" minlength="5"  required>
+                            <span class="error name-404" ></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="phone" class="form-lable">Số điện thoại:</label>
+                            <input id="phone" name="phone" type="number" class="form_input"  placeholder="Số điện thoại">
+                            <span class="error phone-404" ></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="cars" class="form-lable">Mẫu xe:</label>
+                            <select name="cars" id="cars" class="form_input" >
+
+                                <option value="hyundai">Santafe</option>
+                                <option value="ford">Everest</option>
+                                <option value="mazda">Cx-5</option>
+
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="date1" class="form-lable">Chọn ngày đặt xe</label>
+                            <input id="date1" name="date1" type="date"  class="form_input" required>
+                            <span class="error date1-404"></span>
+                            </div>
+                         
+                            <div class="form__group">
+                                <label for="date2" class="form-lable">Ngày trả xe</label>
+                                <input id="date2" name="date2" type="date"  class="form_input"  required>
+                                <span class="error date2-404"></span>
+                                </div>    
+
+
+                        
+                        <div class="form__group">
+                            <label for="date" class="form-lable">Tổng ngày thuê:</label>
+                            
+                            <span class=" thue"></span>
+                        </div> 
+                    
+
+                        <div class="form__group">
+                            <label for="pay" class="form-lable ">Số tiền bạn cần thanh toán là:</label>
+                            
+                            <span class="pay form_input"></span>
+                        </div>
+
+
+                        
+                        
+                        <div class="form__controls">
+                            
+                            <button id="save" onclick="validate()" class="btn btn-primary">Xác nhận</button>
+                        </div>
+    
+                    </div>
+    
+                    
+                    
+            </form>
+            
+
+        </div>
+
+
+
+    </div>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="./js/oderValidate.js"></script>
+
+</body>
+
+<footer class="footer">
+
+    &copy; Hoang Hau <br>
+    <p>Liên hệ: hoanghau290698@gmail.com</p>
+    
+    
+
+</footer>
+
+</html>
